@@ -196,28 +196,38 @@ p {
 
 footer {
     padding: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: transparent;
-    color: black;
     text-align: center;
     margin-top: -60px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /* Navbar links */
 footer a {
     color: black;
     padding: 14px 16px;
+    flex: 33%;
 }
 
 footer img {
     padding: 15px;
 
-    max-width: 8%;
+    max-width: 25%;
+}
+
+.wrapper {
+    align-content: flex-start;
 }
 
 /* Cards are split into two columns at 992px or smaller */
 @media screen and (max-width: 992px) {
     .secondary-work {
         width: 90%;
+    }
+
+    footer {
+        flex-direction: column;
     }
 }  
